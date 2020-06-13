@@ -1,0 +1,3 @@
+[submodule "deps/protobuf-inspector"]
+	path = deps/protobuf-inspector
+	url = https://github.com/mildsunrise/protobuf-inspector.git
