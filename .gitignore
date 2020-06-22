@@ -1,0 +1,16 @@
+# IDEA
+/.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# SASS
+sass-cache/
+*.css.map
+*.sass.map
+*.scss.map

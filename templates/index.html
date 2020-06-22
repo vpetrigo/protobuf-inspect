@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container py-4">
+    <div class="row">
+        <div class="col-6">
+            <form id="proto-form" class="col-md-12" method="post">
+                <div class="form-group row">
+                    <label for="select-input-type" class="col-form-label">Select Input Type:</label>
+                    <select id="select-input-type" name="input-type" class="form-control">
+                        <option value="hex">HEX</option>
+                        <option value="base64">Base64</option>
+                    </select>
+                </div>
+                <div class="form-group row">
+                    <label for="raw-proto-text">Raw Protobuf Representation</label>
+                    <textarea id="raw-proto-text" name="raw-proto-text" class="form-control proto-input"
+                              placeholder="Enter Protobuf representation"></textarea>
+                </div>
+                <button type="submit" class="form-group row btn btn-primary">Process</button>
+            </form>
+        </div>
+        <div id="inspection-output" class="col-6 proto-output">
+            <h1>Output</h1>
+            <pre class="h-75"></pre>
+        </div>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='js/form.js') }}"></script>
+{% endblock %}
